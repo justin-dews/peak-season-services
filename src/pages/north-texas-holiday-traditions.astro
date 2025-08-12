@@ -1,0 +1,415 @@
+---
+import '../styles/global.css';
+
+const title = "North Texas Holiday Traditions & Christmas Celebrations | Denton Area Guide";
+const description = "Discover beloved North Texas holiday traditions and Christmas celebrations. From Denton Square festivities to regional holiday lighting displays. Your complete holiday guide!";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="keywords" content="North Texas holiday traditions, Denton Christmas celebrations, Texas holiday events, Denton Square Christmas, North Texas Christmas lights, holiday traditions Texas" />
+	</head>
+	<body class="bg-slate-50">
+		<!-- Navigation -->
+		<nav class="bg-green-800 text-white py-4 sticky top-0 z-50">
+			<div class="container mx-auto px-4 flex justify-between items-center">
+				<div class="text-2xl font-bold text-amber-300">Peak Season Services</div>
+				<div class="hidden md:flex space-x-6">
+					<a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+					<a href="/services" class="hover:text-amber-300 transition-colors">Services</a>
+					<a href="/north-texas-holiday-traditions" class="text-amber-300">Holiday Traditions</a>
+					<a href="/about" class="hover:text-amber-300 transition-colors">About</a>
+					<a href="/contact" class="hover:text-amber-300 transition-colors">Contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-b from-green-700 to-green-600 text-white py-16">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 text-amber-300">
+					North Texas Holiday Traditions
+				</h1>
+				<p class="text-xl mb-6 max-w-3xl mx-auto">
+					Celebrating the magic of Christmas in Denton and North Texas with time-honored traditions, festive events, and community celebrations
+				</p>
+			</div>
+		</section>
+
+		<!-- Denton Holiday Traditions -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Beloved Denton Christmas Traditions</h2>
+				<div class="grid lg:grid-cols-2 gap-12">
+					<div>
+						<h3 class="text-2xl font-bold mb-6 text-green-800">Historic Denton Square Christmas</h3>
+						<p class="text-gray-700 mb-6">
+							The heart of Denton's holiday spirit beats strongest around the historic courthouse square. Every December, 
+							the square transforms into a winter wonderland with twinkling lights, festive decorations, and community gatherings 
+							that have warmed hearts for generations.
+						</p>
+						<div class="space-y-4">
+							<div class="bg-slate-50 p-4 rounded-lg">
+								<h4 class="font-bold text-green-800 mb-2">Courthouse Square Lighting</h4>
+								<p class="text-gray-600">The annual lighting of the historic courthouse creates a magical centerpiece 
+								for downtown Denton, with professional Christmas light installation enhancing the Victorian architecture.</p>
+							</div>
+							<div class="bg-slate-50 p-4 rounded-lg">
+								<h4 class="font-bold text-green-800 mb-2">Downtown Window Displays</h4>
+								<p class="text-gray-600">Local businesses around the square compete for the most creative holiday window displays, 
+								creating a walking tour of Christmas magic through downtown Denton.</p>
+							</div>
+							<div class="bg-slate-50 p-4 rounded-lg">
+								<h4 class="font-bold text-green-800 mb-2">Holiday Market & Events</h4>
+								<p class="text-gray-600">Seasonal markets, caroling events, and family photo opportunities make the 
+								square the perfect destination for creating holiday memories.</p>
+							</div>
+						</div>
+					</div>
+					<div class="h-96 bg-gradient-to-br from-red-400 to-red-600 rounded-lg"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Regional Holiday Events -->
+		<section class="py-16 bg-slate-100">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">North Texas Holiday Calendar</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">November Traditions</h3>
+						<ul class="space-y-3 text-gray-700">
+							<li class="flex items-start">
+								<span class="text-red-500 mr-2">•</span>
+								<div>
+									<strong>UNT Homecoming Festivities</strong><br>
+									<small class="text-gray-600">University community holiday preparations begin</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-red-500 mr-2">•</span>
+								<div>
+									<strong>Thanksgiving Weekend Decorating</strong><br>
+									<small class="text-gray-600">Families begin Christmas light installation</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-red-500 mr-2">•</span>
+								<div>
+									<strong>Small Business Saturday</strong><br>
+									<small class="text-gray-600">Downtown merchants launch holiday shopping season</small>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">December Celebrations</h3>
+						<ul class="space-y-3 text-gray-700">
+							<li class="flex items-start">
+								<span class="text-green-500 mr-2">•</span>
+								<div>
+									<strong>Denton Square Tree Lighting</strong><br>
+									<small class="text-gray-600">Community gathers for annual ceremony</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-green-500 mr-2">•</span>
+								<div>
+									<strong>Holiday Home Tours</strong><br>
+									<small class="text-gray-600">Showcasing beautifully decorated Denton homes</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-green-500 mr-2">•</span>
+								<div>
+									<strong>Christmas Eve Luminarias</strong><br>
+									<small class="text-gray-600">Traditional neighborhood candlelight displays</small>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">New Year Traditions</h3>
+						<ul class="space-y-3 text-gray-700">
+							<li class="flex items-start">
+								<span class="text-amber-500 mr-2">•</span>
+								<div>
+									<strong>First Friday Art Walk</strong><br>
+									<small class="text-gray-600">January art openings and winter exhibitions</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-amber-500 mr-2">•</span>
+								<div>
+									<strong>Light Takedown Weekend</strong><br>
+									<small class="text-gray-600">Community tradition of post-holiday cleanup</small>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<span class="text-amber-500 mr-2">•</span>
+								<div>
+									<strong>Winter Farmers Market</strong><br>
+									<small class="text-gray-600">Indoor markets feature local crafts and food</small>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Texas-Style Holiday Decorating -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Texas-Style Holiday Decorating</h2>
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div class="h-96 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg"></div>
+					<div>
+						<h3 class="text-2xl font-bold mb-6 text-green-800">Everything's Bigger in Texas - Including Christmas!</h3>
+						<p class="text-gray-700 mb-6">
+							North Texas homeowners are known for their spectacular holiday lighting displays that can be seen from blocks away. 
+							From sprawling ranch homes to historic Victorian houses, each property tells its own Christmas story through lights.
+						</p>
+						<div class="space-y-4">
+							<div class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-bold text-gray-800">Large-Scale Displays</h4>
+									<p class="text-gray-600">Multi-acre properties allow for expansive Christmas light installations 
+									that incorporate barns, outbuildings, and extensive landscaping.</p>
+								</div>
+							</div>
+							<div class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-bold text-gray-800">Weather-Resistant Traditions</h4>
+									<p class="text-gray-600">Texas weather demands durable lighting solutions that can withstand 
+									sudden temperature changes and occasional winter storms.</p>
+								</div>
+							</div>
+							<div class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-bold text-gray-800">Community Competition</h4>
+									<p class="text-gray-600">Friendly neighborhood competitions inspire increasingly creative 
+									and elaborate holiday lighting displays each year.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Holiday Lighting Inspiration -->
+		<section class="py-16 bg-slate-100">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Denton Area Holiday Lighting Inspiration</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="bg-white rounded-lg p-6 shadow-md text-center">
+						<div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+							</svg>
+						</div>
+						<h3 class="font-bold mb-3 text-green-800">Victorian Elegance</h3>
+						<p class="text-gray-600 text-sm">Historic Denton homes showcase classic white lights highlighting intricate architectural details and wraparound porches.</p>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md text-center">
+						<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+							</svg>
+						</div>
+						<h3 class="font-bold mb-3 text-green-800">Ranch Style</h3>
+						<p class="text-gray-600 text-sm">Sprawling ranch homes feature extensive roofline lighting, illuminated trees, and dramatic driveway entrance displays.</p>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md text-center">
+						<div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+							</svg>
+						</div>
+						<h3 class="font-bold mb-3 text-green-800">Modern Minimalist</h3>
+						<p class="text-gray-600 text-sm">Contemporary homes embrace clean lines with strategic LED placement creating sophisticated geometric light patterns.</p>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md text-center">
+						<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+							</svg>
+						</div>
+						<h3 class="font-bold mb-3 text-green-800">Farmhouse Charm</h3>
+						<p class="text-gray-600 text-sm">Rustic farmhouses combine warm white lights with natural elements, creating cozy displays that welcome all who pass by.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Family Traditions -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Creating New Family Traditions</h2>
+				<div class="max-w-4xl mx-auto">
+					<div class="bg-slate-50 rounded-lg p-8 mb-8">
+						<h3 class="text-2xl font-bold mb-6 text-green-800">The Magic of Professional Christmas Light Installation</h3>
+						<p class="text-gray-700 mb-6">
+							Many Denton families have discovered that hiring professional Christmas light installers creates more time 
+							for what truly matters during the holidays - making memories with loved ones. Instead of spending weekends 
+							on ladders, families can focus on baking cookies, attending holiday events, and enjoying the season together.
+						</p>
+						<div class="grid md:grid-cols-2 gap-6">
+							<div>
+								<h4 class="font-bold text-green-800 mb-3">Benefits for Busy Families</h4>
+								<ul class="space-y-2 text-gray-600">
+									<li>• More time for holiday baking and crafts</li>
+									<li>• Safe installation without ladder risks</li>
+									<li>• Professional design creates wow factor</li>
+									<li>• No storage needed for lights and equipment</li>
+									<li>• Hassle-free removal after holidays</li>
+								</ul>
+							</div>
+							<div>
+								<h4 class="font-bold text-green-800 mb-3">Creating Lasting Memories</h4>
+								<ul class="space-y-2 text-gray-600">
+									<li>• Annual lighting ceremony becomes family tradition</li>
+									<li>• Children remember the magic, not the stress</li>
+									<li>• Professional photos with beautiful backdrop</li>
+									<li>• Neighborhood appreciation and connections</li>
+									<li>• Holiday entertaining with stunning ambiance</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Local Holiday Recipes -->
+		<section class="py-16 bg-red-50">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">North Texas Holiday Recipes</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">Texas Pecan Pie Bars</h3>
+						<p class="text-gray-700 mb-4">
+							A North Texas holiday staple using locally grown pecans. These bars are perfect for holiday parties 
+							and gift-giving to neighbors and friends.
+						</p>
+						<div class="text-sm text-gray-600">
+							<p><strong>Perfect for:</strong> Holiday cookie exchanges, potluck dinners, and welcoming new neighbors</p>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">Spiced Apple Cider</h3>
+						<p class="text-gray-700 mb-4">
+							Warm guests during Denton's chilly December nights with this traditional spiced cider recipe 
+							that's been passed down through Texas families for generations.
+						</p>
+						<div class="text-sm text-gray-600">
+							<p><strong>Perfect for:</strong> Holiday home tours, tree lighting ceremonies, and outdoor gatherings</p>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-lg p-6 shadow-md">
+						<h3 class="text-xl font-bold mb-4 text-green-800">Cowboy Christmas Cookies</h3>
+						<p class="text-gray-700 mb-4">
+							These hearty oatmeal cookies with chocolate chips and pecans represent the perfect blend 
+							of Texas ranch traditions and holiday sweetness.
+						</p>
+						<div class="text-sm text-gray-600">
+							<p><strong>Perfect for:</strong> School parties, office treats, and Santa's midnight snack</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center mt-8">
+					<p class="text-gray-600 italic">
+						Recipe details available in our complete North Texas Holiday Cookbook - 
+						request your copy when you schedule your Christmas light installation!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-green-700 text-white">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="text-4xl font-bold mb-6">Make This Holiday Season Magical</h2>
+				<p class="text-xl mb-8 max-w-3xl mx-auto">
+					Join the North Texas tradition of spectacular holiday lighting. Professional installation means more time 
+					for family traditions, holiday baking, and creating memories that last a lifetime.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="bg-amber-500 hover:bg-amber-600 text-green-800 font-bold py-4 px-8 rounded-lg transition-colors">
+						Start Your Holiday Tradition
+					</a>
+					<a href="/residential-christmas-lights" class="border-2 border-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 rounded-lg transition-colors">
+						View Our Services
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-green-800 text-white py-8">
+			<div class="container mx-auto px-4">
+				<div class="grid md:grid-cols-4 gap-8">
+					<div>
+						<h3 class="text-xl font-bold mb-4 text-amber-300">Peak Season Services</h3>
+						<p class="text-green-200">Creating magical North Texas holiday traditions through professional Christmas light installation.</p>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Holiday Traditions</h4>
+						<ul class="space-y-2 text-green-200 text-sm">
+							<li>Denton Square celebrations</li>
+							<li>Victorian home lighting</li>
+							<li>Ranch-style displays</li>
+							<li>Community events</li>
+							<li>Family traditions</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Services</h4>
+						<ul class="space-y-2 text-green-200">
+							<li><a href="/residential-christmas-lights" class="hover:text-amber-300">Residential Lighting</a></li>
+							<li><a href="/commercial-christmas-lights" class="hover:text-amber-300">Commercial Displays</a></li>
+							<li><a href="/services" class="hover:text-amber-300">All Services</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Contact Info</h4>
+						<ul class="space-y-2 text-green-200">
+							<li>Denton, Texas</li>
+							<li>(940) 555-PEAK</li>
+							<li>info@peakseasonservices.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+					<p>&copy; 2024 Peak Season Services. Celebrating North Texas holiday traditions since 2019.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

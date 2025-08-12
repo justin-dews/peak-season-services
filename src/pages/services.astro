@@ -1,0 +1,405 @@
+---
+import '../styles/global.css';
+
+const title = "Holiday Lighting Services | Peak Season Services Denton TX";
+const description = "Comprehensive holiday lighting services in Denton, TX including residential, commercial, and custom displays. Professional installation, maintenance, and removal.";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="keywords" content="holiday lighting services, residential christmas lights, commercial lighting, Denton TX, custom displays" />
+	</head>
+	<body class="bg-slate-50">
+		<!-- Navigation -->
+		<nav class="bg-green-800 text-white py-4 sticky top-0 z-50">
+			<div class="container mx-auto px-4 flex justify-between items-center">
+				<div class="text-2xl font-bold text-amber-300">Peak Season Services</div>
+				<div class="hidden md:flex space-x-6">
+					<a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+					<a href="/services" class="text-amber-300">Services</a>
+					<a href="/service-areas" class="hover:text-amber-300 transition-colors">Service Areas</a>
+					<a href="/about" class="hover:text-amber-300 transition-colors">About</a>
+					<a href="/contact" class="hover:text-amber-300 transition-colors">Contact</a>
+				</div>
+				<div class="md:hidden">
+					<button class="text-white focus:outline-none">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-b from-green-700 to-green-600 text-white py-16">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4 text-amber-300">
+					Our Holiday Lighting Services
+				</h1>
+				<p class="text-xl mb-6 max-w-2xl mx-auto">
+					Professional holiday lighting solutions for homes and businesses in Denton, Texas
+				</p>
+			</div>
+		</section>
+
+		<!-- Residential Services -->
+		<section id="residential" class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+					<div>
+						<h2 class="text-4xl font-bold mb-6 text-green-800">Residential Holiday Lighting</h2>
+						<p class="text-lg text-gray-700 mb-6">
+							Transform your home into a magical winter wonderland with our professional residential holiday lighting services. 
+							We specialize in creating stunning displays that enhance your home's architecture while maintaining safety and elegance.
+						</p>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Roofline Lighting</h3>
+									<p class="text-gray-600">Beautiful outline lighting that highlights your home's unique architecture</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Tree & Landscape Lighting</h3>
+									<p class="text-gray-600">Illuminate trees, bushes, and garden features with professional-grade LED lights</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Walkway & Driveway Lighting</h3>
+									<p class="text-gray-600">Safe and beautiful pathway lighting for guests and family</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Window & Door Accents</h3>
+									<p class="text-gray-600">Elegant lighting accents around windows, doors, and architectural features</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="h-96 bg-gradient-to-br from-green-400 to-green-600 rounded-lg"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Commercial Services -->
+		<section id="commercial" class="py-16 bg-slate-100">
+			<div class="container mx-auto px-4">
+				<div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+					<div class="h-96 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg order-2 lg:order-1"></div>
+					<div class="order-1 lg:order-2">
+						<h2 class="text-4xl font-bold mb-6 text-green-800">Commercial Holiday Lighting</h2>
+						<p class="text-lg text-gray-700 mb-6">
+							Make your business stand out during the holiday season with our professional commercial lighting services. 
+							We help businesses attract customers and create memorable experiences with stunning holiday displays.
+						</p>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Storefront Displays</h3>
+									<p class="text-gray-600">Eye-catching window and entrance lighting to draw customers</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Large-Scale Installations</h3>
+									<p class="text-gray-600">Shopping centers, office buildings, and industrial properties</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Parking Lot & Perimeter Lighting</h3>
+									<p class="text-gray-600">Festive lighting for parking areas and building perimeters</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Maintenance & Monitoring</h3>
+									<p class="text-gray-600">Ongoing maintenance throughout the holiday season</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Custom Displays -->
+		<section id="custom" class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+					<div>
+						<h2 class="text-4xl font-bold mb-6 text-green-800">Custom Holiday Displays</h2>
+						<p class="text-lg text-gray-700 mb-6">
+							Bring your unique vision to life with our custom holiday lighting designs. From themed displays to 
+							synchronized light shows, we create one-of-a-kind installations that truly capture the holiday spirit.
+						</p>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Design Consultation</h3>
+									<p class="text-gray-600">Work with our designers to create your perfect holiday display</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Themed Installations</h3>
+									<p class="text-gray-600">Winter wonderland, traditional Christmas, modern displays, and more</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Animated & Synchronized Displays</h3>
+									<p class="text-gray-600">Dynamic lighting shows synchronized to music or timers</p>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h3 class="font-semibold text-green-800">Specialty Elements</h3>
+									<p class="text-gray-600">Garland, wreaths, projections, and custom lighting features</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="h-96 bg-gradient-to-br from-red-400 to-red-600 rounded-lg"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Process Section -->
+		<section class="py-16 bg-slate-100">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Our Installation Process</h2>
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">1</div>
+						<h3 class="font-semibold mb-2 text-green-800">Consultation</h3>
+						<p class="text-gray-600">Free on-site consultation to discuss your vision and requirements</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">2</div>
+						<h3 class="font-semibold mb-2 text-green-800">Design</h3>
+						<p class="text-gray-600">Custom design plan with detailed layout and pricing</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">3</div>
+						<h3 class="font-semibold mb-2 text-green-800">Installation</h3>
+						<p class="text-gray-600">Professional installation by our trained technicians</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">4</div>
+						<h3 class="font-semibold mb-2 text-green-800">Maintenance</h3>
+						<p class="text-gray-600">Ongoing support and post-season takedown service</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<h2 class="text-4xl font-bold text-center mb-12 text-green-800">Service Packages</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-slate-50 rounded-lg p-8 text-center">
+						<h3 class="text-2xl font-bold mb-4 text-green-800">Basic Package</h3>
+						<p class="text-gray-600 mb-6">Perfect for simple roofline displays</p>
+						<ul class="text-left space-y-3 mb-6">
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Professional installation
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								LED lights included
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Post-season takedown
+							</li>
+						</ul>
+						<a href="/contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+							Get Quote
+						</a>
+					</div>
+					<div class="bg-amber-50 rounded-lg p-8 text-center border-2 border-amber-400">
+						<div class="bg-amber-400 text-white px-4 py-2 rounded-full inline-block mb-4 font-semibold">Most Popular</div>
+						<h3 class="text-2xl font-bold mb-4 text-green-800">Premium Package</h3>
+						<p class="text-gray-600 mb-6">Complete holiday transformation</p>
+						<ul class="text-left space-y-3 mb-6">
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Everything in Basic
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Tree & landscape lighting
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Walkway lighting
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Maintenance visits
+							</li>
+						</ul>
+						<a href="/contact" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+							Get Quote
+						</a>
+					</div>
+					<div class="bg-slate-50 rounded-lg p-8 text-center">
+						<h3 class="text-2xl font-bold mb-4 text-green-800">Custom Package</h3>
+						<p class="text-gray-600 mb-6">Fully customized displays</p>
+						<ul class="text-left space-y-3 mb-6">
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Everything in Premium
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Custom design consultation
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Specialty elements
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								Animated displays
+							</li>
+						</ul>
+						<a href="/contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+							Get Quote
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-green-700 text-white">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+				<p class="text-xl mb-8 max-w-2xl mx-auto">
+					Contact us today for a free consultation and custom quote for your holiday lighting project.
+				</p>
+				<div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+					<a href="tel:(940) 555-PEAK" class="inline-block bg-amber-500 hover:bg-amber-600 text-green-800 font-bold py-3 px-8 rounded-lg transition-colors">
+						Call (940) 555-PEAK
+					</a>
+					<a href="/contact" class="inline-block border-2 border-white hover:bg-white hover:text-green-800 font-bold py-3 px-8 rounded-lg transition-colors">
+						Request Free Quote
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-green-800 text-white py-8">
+			<div class="container mx-auto px-4">
+				<div class="grid md:grid-cols-4 gap-8">
+					<div>
+						<h3 class="text-xl font-bold mb-4 text-amber-300">Peak Season Services</h3>
+						<p class="text-green-200">Professional holiday lighting installation serving Denton, TX and surrounding areas.</p>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Services</h4>
+						<ul class="space-y-2 text-green-200">
+							<li><a href="/services#residential" class="hover:text-amber-300">Residential Lighting</a></li>
+							<li><a href="/services#commercial" class="hover:text-amber-300">Commercial Lighting</a></li>
+							<li><a href="/services#custom" class="hover:text-amber-300">Custom Displays</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Company</h4>
+						<ul class="space-y-2 text-green-200">
+							<li><a href="/about" class="hover:text-amber-300">About Us</a></li>
+							<li><a href="/contact" class="hover:text-amber-300">Contact</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Contact Info</h4>
+						<ul class="space-y-2 text-green-200">
+							<li>Denton, Texas</li>
+							<li>(940) 555-PEAK</li>
+							<li>info@peakseasonservices.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+					<p>&copy; 2024 Peak Season Services. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
