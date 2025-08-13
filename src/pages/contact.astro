@@ -195,117 +195,18 @@ const description = "Contact Peak Season Services for professional holiday light
 					<!-- Contact Form -->
 					<div>
 						<h2 class="text-3xl font-bold mb-8 text-green-800">Request Your Free Quote</h2>
-						<form class="space-y-6">
-							<div class="grid md:grid-cols-2 gap-4">
-								<div>
-									<label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
-									<input type="text" id="firstName" name="firstName" required 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-								</div>
-								<div>
-									<label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
-									<input type="text" id="lastName" name="lastName" required 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-								</div>
-							</div>
-
-							<div class="grid md:grid-cols-2 gap-4">
-								<div>
-									<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-									<input type="email" id="email" name="email" required 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-								</div>
-								<div>
-									<label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-									<input type="tel" id="phone" name="phone" required 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-								</div>
-							</div>
-
-							<div>
-								<label for="address" class="block text-sm font-medium text-gray-700 mb-2">Property Address</label>
-								<input type="text" id="address" name="address" 
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-							</div>
-
-							<div class="grid md:grid-cols-2 gap-4">
-								<div>
-									<label for="serviceType" class="block text-sm font-medium text-gray-700 mb-2">Service Type *</label>
-									<select id="serviceType" name="serviceType" required 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-										<option value="">Select a service...</option>
-										<option value="residential">Residential Lighting</option>
-										<option value="commercial">Commercial Lighting</option>
-										<option value="custom">Custom Display</option>
-										<option value="consultation">General Consultation</option>
-									</select>
-								</div>
-								<div>
-									<label for="propertyType" class="block text-sm font-medium text-gray-700 mb-2">Property Type</label>
-									<select id="propertyType" name="propertyType" 
-										class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-										<option value="">Select property type...</option>
-										<option value="single-family">Single Family Home</option>
-										<option value="townhouse">Townhouse/Condo</option>
-										<option value="apartment">Apartment Complex</option>
-										<option value="retail">Retail Business</option>
-										<option value="office">Office Building</option>
-										<option value="other">Other</option>
-									</select>
-								</div>
-							</div>
-
-							<div>
-								<label for="budget" class="block text-sm font-medium text-gray-700 mb-2">Estimated Budget (Optional)</label>
-								<select id="budget" name="budget" 
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-									<option value="">Select budget range...</option>
-									<option value="under-500">Under $500</option>
-									<option value="500-1000">$500 - $1,000</option>
-									<option value="1000-2500">$1,000 - $2,500</option>
-									<option value="2500-5000">$2,500 - $5,000</option>
-									<option value="5000-plus">$5,000+</option>
-									<option value="discuss">Prefer to discuss</option>
-								</select>
-							</div>
-
-							<div>
-								<label for="timeline" class="block text-sm font-medium text-gray-700 mb-2">When do you need installation?</label>
-								<select id="timeline" name="timeline" 
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
-									<option value="">Select timeline...</option>
-									<option value="asap">As soon as possible</option>
-									<option value="october">October</option>
-									<option value="november">November</option>
-									<option value="december">December</option>
-									<option value="flexible">I'm flexible</option>
-								</select>
-							</div>
-
-							<div>
-								<label for="message" class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
-								<textarea id="message" name="message" rows="4" 
-									placeholder="Tell us about your vision, special requirements, or any questions you have..."
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
-							</div>
-
-							<div class="flex items-start">
-								<input type="checkbox" id="newsletter" name="newsletter" 
-									class="mt-1 h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
-								<label for="newsletter" class="ml-2 block text-sm text-gray-700">
-									I'd like to receive updates about Peak Season Services and seasonal lighting tips.
-								</label>
-							</div>
-
-							<button type="submit" 
-								class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-lg transition-colors">
-								Send My Request
-							</button>
-
-							<p class="text-sm text-gray-600 text-center">
-								* Required fields. We'll respond within 24 hours during business days.
-							</p>
-						</form>
+						<div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+							<iframe 
+								src="https://api.leadconnectorhq.com/widget/form/bMnOYVVIkoSmvNyYOCnr" 
+								style="width: 100%; height: 700px; border: none; border-radius: 8px;"
+								id="ghl-contact-form"
+								title="Contact Peak Season Services - Request Your Free Quote"
+								loading="lazy">
+							</iframe>
+						</div>
+						<p class="text-sm text-gray-600 text-center mt-4">
+							We'll respond within 24 hours during business days. All information is kept confidential.
+						</p>
 					</div>
 				</div>
 			</div>
