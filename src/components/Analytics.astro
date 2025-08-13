@@ -1,0 +1,105 @@
+---
+// Google Analytics component with enhanced tracking
+// Pass page_type and service_area as props for custom tracking
+
+interface Props {
+	page_type?: string;
+	service_area?: string;
+	page_title?: string;
+}
+
+const { page_type = 'general', service_area = 'Denton TX', page_title = 'Peak Season Services' } = Astro.props;
+---
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H5G1FT71B"></script>
+<script define:vars={{ page_type, service_area, page_title }}>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'G-6H5G1FT71B', {
+		page_title: page_title,
+		page_location: window.location.href,
+		custom_map: {
+			'custom_parameter_1': 'service_area',
+			'custom_parameter_2': 'page_type'
+		}
+	});
+
+	// Enhanced ecommerce and conversion tracking
+	gtag('event', 'page_view', {
+		page_title: page_title,
+		page_location: window.location.href,
+		service_area: service_area,
+		page_type: page_type
+	});
+
+	// Track phone number clicks
+	function trackPhoneClick(location = 'unknown') {
+		gtag('event', 'phone_call_click', {
+			event_category: 'engagement',
+			event_label: location + '_phone',
+			service_area: service_area,
+			page_type: page_type,
+			value: 1
+		});
+	}
+
+	// Track email clicks
+	function trackEmailClick(location = 'unknown') {
+		gtag('event', 'email_click', {
+			event_category: 'engagement',
+			event_label: location + '_email',
+			service_area: service_area,
+			page_type: page_type,
+			value: 1
+		});
+	}
+
+	// Track CTA button clicks
+	function trackCTAClick(location, action) {
+		gtag('event', 'cta_click', {
+			event_category: 'conversion',
+			event_label: location + '_' + action,
+			service_area: service_area,
+			page_type: page_type,
+			value: 1
+		});
+	}
+
+	// Track service area page visits
+	function trackServiceAreaClick(area) {
+		gtag('event', 'service_area_click', {
+			event_category: 'navigation',
+			event_label: 'service_area_' + area,
+			value: 1
+		});
+	}
+
+	// Track blog engagement
+	function trackBlogEngagement(action, article = '') {
+		gtag('event', 'blog_engagement', {
+			event_category: 'content',
+			event_label: 'blog_' + action + (article ? '_' + article : ''),
+			value: 1
+		});
+	}
+
+	// Track FAQ engagement
+	function trackFAQEngagement(action) {
+		gtag('event', 'faq_engagement', {
+			event_category: 'content',
+			event_label: 'faq_' + action,
+			value: 1
+		});
+	}
+
+	// Make functions globally available
+	window.trackPhoneClick = trackPhoneClick;
+	window.trackEmailClick = trackEmailClick;
+	window.trackCTAClick = trackCTAClick;
+	window.trackServiceAreaClick = trackServiceAreaClick;
+	window.trackBlogEngagement = trackBlogEngagement;
+	window.trackFAQEngagement = trackFAQEngagement;
+</script>

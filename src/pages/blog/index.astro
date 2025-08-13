@@ -1,5 +1,6 @@
 ---
 import '../../styles/global.css';
+import Analytics from '../../components/Analytics.astro';
 
 const title = "Holiday Lighting Tips Blog | Christmas Light Ideas Denton TX";
 const description = "Expert holiday lighting tips, Christmas light ideas, and seasonal decorating advice from Peak Season Services. Professional insights for Denton TX homeowners.";
@@ -19,6 +20,8 @@ const description = "Expert holiday lighting tips, Christmas light ideas, and se
 		<meta property="og:url" content="https://www.peakseasonservices.com/blog" />
 		<meta property="og:image" content="https://www.peakseasonservices.com/images/placeholder-hero.svg" />
 		<meta name="keywords" content="holiday lighting tips, Christmas light ideas, holiday decorating Denton TX, Christmas light safety, holiday lighting design, Christmas decorating blog" />
+		
+		<Analytics page_type="blog" service_area="Denton TX" page_title={title} />
 	</head>
 	<body class="bg-slate-50">
 		<!-- Navigation -->
