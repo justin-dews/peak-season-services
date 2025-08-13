@@ -1,8 +1,15 @@
 ---
 import '../styles/global.css';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 const title = "Residential Christmas Lights Denton TX | Home Holiday Lighting Installation";
 const description = "Expert residential Christmas lights Denton TX installation. Professional outdoor Christmas lights, roofline lighting, tree wrapping. Serving all Denton homes. Free estimates!";
+
+const breadcrumbs = [
+	{ label: "Home", href: "/" },
+	{ label: "Services", href: "/services" },
+	{ label: "Residential Christmas Lights" }
+];
 ---
 
 <html lang="en">
@@ -23,15 +30,33 @@ const description = "Expert residential Christmas lights Denton TX installation.
 		<nav class="bg-green-800 text-white py-4 sticky top-0 z-50">
 			<div class="container mx-auto px-4 flex justify-between items-center">
 				<div class="text-2xl font-bold text-amber-300">Peak Season Services</div>
-				<div class="hidden md:flex space-x-6">
+				<div class="hidden md:flex space-x-4">
 					<a href="/" class="hover:text-amber-300 transition-colors">Home</a>
-					<a href="/services" class="hover:text-amber-300 transition-colors">Services</a>
-					<a href="/residential-christmas-lights" class="text-amber-300">Residential</a>
+					<div class="relative group">
+						<a href="/services" class="hover:text-amber-300 transition-colors cursor-pointer">Services ▾</a>
+						<div class="absolute top-full left-0 bg-green-800 border border-green-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-48">
+							<a href="/services" class="block px-4 py-2 hover:bg-green-700 rounded-t-lg">All Services</a>
+							<a href="/residential-christmas-lights" class="block px-4 py-2 hover:bg-green-700">Residential Lights</a>
+							<a href="/commercial-christmas-lights" class="block px-4 py-2 hover:bg-green-700">Commercial Lights</a>
+							<a href="/permanent-holiday-lighting" class="block px-4 py-2 hover:bg-green-700 rounded-b-lg">Permanent Lighting</a>
+						</div>
+					</div>
+					<a href="/service-areas" class="hover:text-amber-300 transition-colors">Service Areas</a>
+					<a href="/north-texas-holiday-traditions" class="hover:text-amber-300 transition-colors">Holiday Traditions</a>
 					<a href="/about" class="hover:text-amber-300 transition-colors">About</a>
 					<a href="/contact" class="hover:text-amber-300 transition-colors">Contact</a>
 				</div>
+				<div class="md:hidden">
+					<button class="text-white focus:outline-none">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</nav>
+
+		<Breadcrumbs items={breadcrumbs} />
 
 		<!-- Hero Section -->
 		<section class="bg-gradient-to-b from-green-700 to-green-600 text-white py-16">

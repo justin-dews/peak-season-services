@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.peakseasonservices.com/sitemap.xml
+
+# Block admin or development files if any exist
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+
+# Allow all search engines to crawl
+# Focus on local SEO for Denton, TX area
