@@ -12,7 +12,7 @@
 #### 2. Basic Information Optimization
 **Business Name:** Peak Season Services
 **Category:** Holiday Lighting Service / Christmas Light Installation
-**Phone:** (940) 555-PEAK
+**Phone:** (940) 468-1874
 **Website:** https://www.peakseasonservices.com
 **Service Areas:** 
 - Denton, TX (All zip codes: 76201, 76205, 76207, 76208, 76209, 76210)
@@ -22,7 +22,7 @@
 
 #### 3. Business Description Optimization
 **Recommended Description:**
-"Professional Christmas light installation and holiday lighting services in Denton, TX. Serving all Denton County areas including Flower Mound, Lewisville, and Corinth. Full-service holiday lighting: design, installation, maintenance, and removal. Licensed, insured, and experienced with residential and commercial properties. Call (940) 555-PEAK for free estimates."
+"Professional Christmas light installation and holiday lighting services in Denton, TX. Serving all Denton County areas including Flower Mound, Lewisville, and Corinth. Full-service holiday lighting: design, installation, maintenance, and removal. Licensed, insured, and experienced with residential and commercial properties. Call (940) 468-1874 for free estimates."
 
 #### 4. Photos to Add
 **High Priority:**
